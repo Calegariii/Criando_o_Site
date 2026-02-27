@@ -8,30 +8,90 @@
     <title>Counter Strike 2</title>
     
     <style>
-        body {
-            /* Caminho da imagem */
-            background-image: url('caminho/para/sua-imagem.jpg');
-            
-            /* Ajusta a imagem para cobrir toda a tela */
-            background-size: cover;
-            
-            /* Centraliza a imagem */
-            background-position: center;
-            
-            /* Impede a repetição da imagem */
-            background-repeat: no-repeat;
-            
-            /* Faz a imagem rolar com a página (scroll) ou ficar fixa (fixed) */
-            background-attachment: fixed;
-            
-            /* Define uma cor de fundo caso a imagem demore a carregar */
-            background-color: #cccccc;
-        }
-        </style>
+            body {
+                margin: 0;
+                padding: 0;
+                /* Define a imagem de fundo */
+                background-image: url(Counter-Strike-Wallpaper-_3.jpg);
+                
+                /* Ajusta a imagem para cobrir toda a área */
+                background-size: cover;
+                
+                /* Centraliza a imagem */
+                background-position: center;
+                
+                /* Evita que a imagem se repita */
+                background-repeat: no-repeat;
+                
+                /* Fixa a imagem para que não role com a página */
+                background-attachment: fixed;
+                
+                /* Garante que o corpo tenha pelo menos a altura da tela */
+                min-height: 100vh;
+
+                 }
+            body {
+                margin: 0;
+                width: 100vw;
+                height: 100vh;
+                background: #111;
+                font-family: Arial, sans-serif;
+                position: relative;
+                }
+
+                .texto {
+                position: absolute;
+                color: white;
+                font-size: 32px;
+                font-weight: bold;
+                }
+
+                /* CANTOS */
+                .topo-esquerda {
+                top: 20px;
+                left: 20px;
+                }
+
+                .topo-direita {
+                top: 20px;
+                right: 20px;
+                }
+
+                .baixo-esquerda {
+                bottom: 20px;
+                left: 20px;
+                }
+
+                .baixo-direita {
+                bottom: 20px;
+                right: 20px;
+                }
+
+                /* CENTRO */
+                .centro {
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                }
+           
+    </style>
     
 </head>
 <body>
-    
+        <div class="texto topo-esquerda">Topo Esquerda</div>
+        <div class="texto topo-direita">Topo Direita</div>
+        <div class="texto baixo-esquerda">Baixo Esquerda</div>
+        <div class="texto baixo-direita">Baixo Direita</div>
+        <div class="texto centro">Centro da tela</div>
+
+      
+        <h1 style="color: blue;">Counter Strike 2</h1>
+        <img src="Counter-Strike-Wallpaper-_3.jpg" alt="">
+
+
+    </h1>
+</body>
+</html>
 
 
       
@@ -41,4 +101,5 @@
 
     </h1>
 </body>
+
 </html>
