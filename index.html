@@ -7,7 +7,6 @@
     <title>Counter Strike 2</title>
     
     <style>
-        /* Unimos todas as regras do body em um só lugar */
         body {
             margin: 0;
             padding: 0;
@@ -16,9 +15,9 @@
             min-height: 100vh;
             width: 100vw;
             
-            /* Configurações do Fundo */
+            
             background-image: url('Counter-Strike-Wallpaper-_3.jpg');
-            background-color: #111; /* Cor de fundo caso a imagem demore a carregar */
+            background-color: #111; 
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
@@ -32,7 +31,7 @@
             font-weight: bold;
         }
 
-        /* POSICIONAMENTOS */
+       
         .topo-esquerda { top: 20px; left: 20px; }
         .topo-direita { top: 20px; right: 20px; }
         .baixo-esquerda { top: 100%; left: 50%; transform: translate(-50%, -50%);}
@@ -42,15 +41,58 @@
             left: 50%;
             transform: translate(-50%, -50%);
         }
+
+        
+        .card-informativo {
+            background-color: #23262e;
+            font-family: 'Rajdhani', sans-serif; 
+            padding: 50px 60px;
+            max-width: 800px;
+            margin: 50px auto; 
+            text-align: center;
+            box-shadow: 0 15px 30px rgba(0,0,0,0.5);
+            position: relative;
+            z-index: 10; 
+        }
+
+        .card-informativo h2 {
+            color: #ffffff;
+            font-size: 36px;
+            margin-top: 0;
+            margin-bottom: 30px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .card-informativo h2 span {
+            font-weight: 800;
+        }
+
+        .card-informativo p {
+            color: #b0b5bf;
+            font-size: 1.2rem;
+            line-height: 1.6;
+            margin-bottom: 25px;
+            font-weight: 500;
+        }
+
+        .card-informativo .destaque-final {
+            color: #ffffff;
+            font-weight: 700;
+            margin-top: 40px;
+            margin-bottom: 0;
+        }
+       
+
     </style>
 </head>
 <body>
 
-    <div class="texto topo-esquerda">Topo Esquerda</div>
-    <div class="texto topo-direita">Topo Direita</div>
-    <div class="texto baixo-esquerda">Baixo Esquerda</div>
-    <div class="texto baixo-direita">Baixo Direita</div>
-    <div class="texto centro">Centro da tela</div>
+    <div class="texto topo-esquerda"></div>
+    <div class="texto topo-direita"></div>
+    <div class="texto baixo-esquerda"></div>
+    <div class="texto baixo-direita"></div>
+    <div class="texto centro"></div>
 
     <h1 style="color: white; text-align: center; margin-top: 100px;">Counter Strike 2</h1>
     
@@ -58,5 +100,14 @@
         <img src="cs2.webp" alt="Imagem do Counter Strike 2" width="400">
     </div>
 
-</body>
+    <div class="card-informativo">
+        <h2>A PRÓXIMA ERA DO <span>COUNTER-STRIKE</span> CHEGOU!</h2>
+        
+        <p>O Counter-Strike 2 é o maior salto tecnológico na história da série, garantindo novos recursos e atualizações para os próximos anos.</p>
+        
+        <p>O Counter-Strike 2 é uma atualização gratuita para o CS:GO. Portanto, monte o seu arsenal, aperfeiçoe as suas habilidades e prepare-se para o que está por vir!</p>
+        
+        <p class="destaque-final">Continue lendo para conhecer alguns dos recursos do Counter-Strike 2.</p>
+    </div>
+    </body>
 </html>
